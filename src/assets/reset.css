@@ -1,0 +1,59 @@
+/*reset.css*/
+/* RESETS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*:focus {
+  outline: 3px dashed #228bec;
+}*/
+html {
+  font: 62.5% / 1.15 sans-serif;
+  /*background-color:rgb(255, 255, 255);*/
+  background-color:darkslategray;
+  display:flex;
+  justify-content:center;
+  font-family: 'Montserrat', sans-serif;
+  scroll-behavior:smooth;
+}
+body {
+  font-size:16.18px;
+  display:flex;
+  align-self:center;
+  width:100%;
+  max-width:65em;
+  font: 1.6rem/1.25 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.container {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  flex-flow:wrap;
+  margin-top:4em;
+  padding:2em;
+  width:100%;
+  max-width:65em;
+  border-radius:0.5em;
+  background-color:whitesmoke;
+}
+
+@media screen and (max-width: 850px) {
+  html {
+    display:flex;
+    justify-content:center;
+  }
+  .container {
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-self:center;
+  }
+  img {
+    height:15em;
+  }
+}
+/*END RESETS*/
